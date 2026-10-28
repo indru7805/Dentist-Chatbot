@@ -1,0 +1,21 @@
+.chat-box {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+#chatBox {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fafafa;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+}

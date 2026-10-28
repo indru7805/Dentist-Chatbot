@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SmileCare Dental Clinic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <a class="navbar-brand" href="/">SmileCare Dental Clinic</a>
+      <div class="navbar-nav">
+        {% if session.get('user_id') %}
+        <a class="nav-link text-white" href="/">Chatbot</a>
+        <a class="nav-link text-white" href="/my-appointments"
+          >My Appointments</a
+        >
+        {% if session.get('role') == 'owner' %}
+        <a class="nav-link text-white" href="/owner">Owner Dashboard</a>
+        {% endif %}
+        <a class="nav-link text-white" href="/logout"
+          >Logout ({{ session.get('user_name') }})</a
+        >
+        {% else %}
+        <a class="nav-link text-white" href="/register">Register</a>
+        <a class="nav-link text-white" href="/login">Login</a>
+        {% endif %}
+      </div>
+    </nav>
+
+    <div class="container">{% block content %}{% endblock %}</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

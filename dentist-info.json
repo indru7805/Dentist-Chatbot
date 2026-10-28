@@ -1,0 +1,23 @@
+{
+  "name": "SmileCare Dental Clinic",
+  "location": "2nd Floor, Rajwada Complex, Kolhapur",
+  "landmark": "Near Mahalaxmi Temple",
+  "type": "Dental Clinic",
+  "hours": {
+    "Monday to Saturday": "10:00 AM - 8:00 PM",
+    "Sunday": "10:00 AM - 2:00 PM"
+  },
+  "services": [
+    "General Checkup - ₹300",
+    "Teeth Cleaning - ₹800",
+    "Cavity Filling - ₹1200",
+    "Root Canal Treatment - ₹5000",
+    "Teeth Whitening - ₹3000",
+    "Braces Consultation - Free"
+  ],
+  "additional_info": [
+    "Emergency dental care available",
+    "Free consultation for first-time patients",
+    "Digital X-ray facility available on-site"
+  ]
+}

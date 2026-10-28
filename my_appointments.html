@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+<div class="dashboard mt-4">
+  <h2>My Appointments</h2>
+
+  <table class="table table-bordered">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Service</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Status</th>
+    </tr>
+    {% for appt in appointments %}
+    <tr>
+      <td>{{ appt[0] }}</td>
+      <td>{{ appt[1] }}</td>
+      <td>{{ appt[2] }}</td>
+      <td>{{ appt[3] }}</td>
+      <td>{{ appt[4] }}</td>
+      <td>{{ appt[5] }}</td>
+      <td>{{ appt[6] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}
