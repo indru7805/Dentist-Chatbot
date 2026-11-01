@@ -15,7 +15,7 @@ A chatbot for a dental clinic that answers patient questions and [helps book app
 - Python, Flask, Jinja2 templates [confirm]
 - Groq API (model: [model name])
 - HTML, CSS, JavaScript
-
+- 
 ## How It Works
 1. The patient sends a message from the chat page.
 2. The server adds a system prompt that sets the bot's role as SmileCare's assistant.
@@ -33,13 +33,13 @@ A chatbot for a dental clinic that answers patient questions and [helps book app
 5. Open `http://localhost:5000`
 
 ## Project Structure
-[run `tree` and paste the real structure]
+run `tree` and paste the real structure
 
 ## Limitations
 - The bot gives general information only and is not medical advice.
 
 ## Future Improvements
-- [e.g. save appointments in MySQL, add clinic FAQs as a knowledge base]
+- e.g. save appointments in MySQL, add clinic FAQs as a knowledge base.
 
 ## Author
 Indrajeet Patil – github.com/indru7805
